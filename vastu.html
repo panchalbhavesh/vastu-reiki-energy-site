@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vastu Shastra Consultations — Vastu Reiki Energy</title>
+<meta name="description" content="Vastu Shastra consultations for homes and offices in Brampton, the GTA, and online worldwide — practical, non-demolition remedies for condos, townhouses and detached homes.">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#FBF7EF;
+    --paper:#F4EEE0;
+    --ink:#241F1A;
+    --ink-soft:#4A4238;
+    --teal:#1E5C54;
+    --teal-dark:#153F3A;
+    --charcoal:#15120E;
+    --terracotta:#A8501F;
+    --gold:#8A6A1F;
+    --line:#E4DBC6;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;font-family:'Work Sans',sans-serif;background:var(--ivory);color:var(--ink);}
+  h1,h2,h3{font-family:'Fraunces',serif;font-weight:600;margin:0;color:var(--ink);}
+  p{margin:0;line-height:1.65;color:var(--ink-soft);}
+  a{color:inherit;text-decoration:none;}
+  button{font-family:inherit;cursor:pointer;}
+  img{max-width:100%;}
+  .btn{position:relative;display:inline-flex;align-items:center;gap:10px;padding:16px 30px;border-radius:999px;font-size:16px;font-weight:600;border:2px solid transparent;transition:transform .2s ease,box-shadow .2s ease;}
+  .btn:hover{box-shadow:0 10px 26px rgba(36,31,26,.18);}
+  .btn:focus-visible{outline:3px solid var(--gold);outline-offset:2px;}
+  .btn-primary{background:var(--terracotta);color:#FFF9F0;}
+  .btn-outline{background:transparent;color:var(--teal-dark);border-color:var(--teal-dark);}
+  .btn-ghost{background:var(--ivory);color:var(--ink);border-color:var(--line);}
+  .magnetic{transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .2s ease;}
+  .container{max-width:1180px;margin:0 auto;padding-left:48px;padding-right:48px;}
+  .eyebrow{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:700;}
+  .card{background:#FFFFFF;border:1px solid var(--line);border-radius:18px;transition:transform .25s ease,box-shadow .25s ease;}
+  .card:hover{transform:translateY(-5px);box-shadow:0 18px 36px rgba(36,31,26,.10);}
+  section{padding:100px 0;}
+  .divider{width:64px;height:3px;background:var(--terracotta);border-radius:2px;}
+  nav a{font-size:15px;font-weight:600;color:var(--ink-soft);position:relative;}
+  nav a::after{content:'';position:absolute;left:0;right:100%;bottom:-4px;height:2px;background:var(--terracotta);transition:right .25s ease;}
+  nav a:hover{color:var(--terracotta);}
+  nav a:hover::after{right:0;}
+  .mobile-menu-btn{display:none;}
+  .mobile-nav-panel{display:none;}
+  .duo{position:relative;overflow:hidden;border-radius:inherit;}
+  .duo img{display:block;width:100%;height:100%;object-fit:cover;filter:grayscale(55%) contrast(1.05);}
+  .duo::after{content:'';position:absolute;inset:0;background:linear-gradient(150deg,var(--terracotta) 0%,var(--teal-dark) 100%);mix-blend-mode:color;opacity:.5;pointer-events:none;}
+
+  .kin{display:block;opacity:0;transform:translateY(36px);animation:riseIn .9s cubic-bezier(.2,.8,.2,1) forwards;}
+  .kin.d1{animation-delay:.05s;}
+  .kin.d2{animation-delay:.22s;}
+  .kin.d3{animation-delay:.39s;}
+  .fade-in{opacity:0;animation:fadeIn .8s ease forwards;}
+  .fade-in.d4{animation-delay:.6s;}
+  .fade-in.d5{animation-delay:.75s;}
+  @keyframes riseIn{to{opacity:1;transform:translateY(0);}}
+  @keyframes fadeIn{to{opacity:1;}}
+
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);}
+  .reveal.is-visible{opacity:1;transform:translateY(0);}
+  .stagger > *{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease;}
+  .stagger.is-visible > *{opacity:1;transform:translateY(0);}
+  .stagger.is-visible > *:nth-child(1){transition-delay:.02s;}
+  .stagger.is-visible > *:nth-child(2){transition-delay:.08s;}
+  .stagger.is-visible > *:nth-child(3){transition-delay:.14s;}
+  .stagger.is-visible > *:nth-child(4){transition-delay:.20s;}
+  .stagger.is-visible > *:nth-child(5){transition-delay:.26s;}
+  .stagger.is-visible > *:nth-child(6){transition-delay:.32s;}
+  .stagger.is-visible > *:nth-child(7){transition-delay:.38s;}
+  .stagger.is-visible > *:nth-child(8){transition-delay:.44s;}
+  .stagger.is-visible > *:nth-child(9){transition-delay:.50s;}
+
+  @keyframes floatDot{0%,100%{transform:translateY(0);}50%{transform:translateY(-16px);}}
+  @keyframes pulseRing{0%{transform:translate(-50%,-50%) scale(.55);opacity:.6;}100%{transform:translate(-50%,-50%) scale(1.9);opacity:0;}}
+  @keyframes spinSlow{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
+  @keyframes spinSlowReverse{from{transform:rotate(360deg);}to{transform:rotate(0deg);}}
+  @keyframes breathe{0%,100%{opacity:.35;transform:scale(1);}50%{opacity:.6;transform:scale(1.06);}}
+  @keyframes marqueeScroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+  .float-dot{position:absolute;border-radius:50%;background:var(--gold);opacity:.35;animation:floatDot 5s ease-in-out infinite;}
+  .mandala{position:absolute;pointer-events:none;}
+  .mandala.spin{animation:spinSlow 70s linear infinite;}
+  .mandala.spin-rev{animation:spinSlowReverse 90s linear infinite;}
+  .energy-glow{animation:breathe 4.5s ease-in-out infinite;}
+  .connector-pulse span{position:absolute;top:50%;left:50%;width:14px;height:14px;border-radius:50%;background:var(--gold);transform:translate(-50%,-50%);}
+  .connector-pulse i{position:absolute;top:50%;left:50%;width:14px;height:14px;border-radius:50%;border:1.5px solid var(--gold);animation:pulseRing 2.4s ease-out infinite;}
+  .connector-pulse i:nth-child(2){animation-delay:.8s;}
+  .connector-pulse i:nth-child(3){animation-delay:1.6s;}
+  #cursor-glow{position:absolute;top:0;left:0;width:320px;height:320px;border-radius:50%;pointer-events:none;background:radial-gradient(circle,rgba(168,80,31,.35) 0%,rgba(168,80,31,0) 70%);filter:blur(6px);will-change:transform;}
+
+  .badge-cta{position:relative;width:118px;height:118px;flex-shrink:0;}
+  .badge-cta svg.ring{position:absolute;inset:0;animation:spinSlow 16s linear infinite;}
+  .badge-cta .core{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:52px;height:52px;border-radius:50%;background:var(--terracotta);display:flex;align-items:center;justify-content:center;}
+
+  .marquee-band{background:var(--charcoal);overflow:hidden;padding:20px 0;}
+  .marquee-track{display:flex;gap:32px;white-space:nowrap;width:max-content;animation:marqueeScroll 32s linear infinite;}
+  .marquee-track span.word{font-family:'Fraunces',serif;font-style:italic;font-size:21px;color:#F3EEDC;text-transform:uppercase;letter-spacing:.03em;}
+  .marquee-track span.dot{color:var(--gold);font-size:14px;align-self:center;}
+
+  #scroll-progress{position:fixed;top:0;left:0;height:3px;background:var(--terracotta);width:0%;z-index:100;transition:width .1s linear;}
+
+  .service-index{border-top:1px solid var(--line);}
+  .service-row{display:grid;grid-template-columns:56px 1fr 2.1fr 32px;align-items:center;gap:24px;padding:24px 6px;border-bottom:1px solid var(--line);cursor:pointer;transition:background .25s ease,padding-left .25s ease;}
+  .service-row:hover{background:var(--paper);padding-left:16px;}
+  .service-row .num{font-family:'Fraunces',serif;font-size:14px;color:var(--gold);}
+  .service-row .name{font-family:'Fraunces',serif;font-size:27px;transition:color .2s ease;}
+  .service-row:hover .name{color:var(--terracotta);}
+  .service-row .desc{font-size:14px;color:var(--ink-soft);}
+  .service-row .arrow{font-size:22px;color:var(--terracotta);opacity:0;transform:translateX(-8px);transition:all .25s ease;}
+  .service-row:hover .arrow{opacity:1;transform:translateX(0);}
+  .service-row .mobile-thumb{display:none;}
+  .service-preview{position:fixed;top:0;left:0;width:220px;height:280px;border-radius:16px;overflow:hidden;pointer-events:none;opacity:0;transform:scale(.92);transition:opacity .22s ease,transform .22s ease;z-index:60;box-shadow:0 26px 50px rgba(20,17,14,.32);}
+  .service-preview.is-active{opacity:1;transform:scale(1);}
+
+  @media (prefers-reduced-motion: reduce){
+    .reveal,.stagger > *{opacity:1 !important;transform:none !important;transition:none !important;}
+    .kin,.fade-in{opacity:1 !important;transform:none !important;animation:none !important;}
+    .float-dot,.mandala.spin,.mandala.spin-rev,.energy-glow,.connector-pulse i,.marquee-track,.badge-cta svg.ring{animation:none !important;}
+    .card:hover{transform:none;}
+    #cursor-glow{display:none;}
+  }
+  @media (max-width:900px){
+    .container{padding-left:24px;padding-right:24px;}
+    section{padding:64px 0;}
+    .hide-mobile{display:none !important;}
+    .grid-2{grid-template-columns:1fr !important;}
+    .grid-3{grid-template-columns:1fr !important;}
+    .grid-4{grid-template-columns:1fr 1fr !important;}
+    h1{font-size:38px !important;}
+    .mobile-menu-btn{display:inline-flex !important;align-items:center;justify-content:center;}
+    .mobile-nav-panel.is-open{display:flex;}
+    .connector-pulse,.mandala,#cursor-glow{display:none !important;}
+    .service-row{grid-template-columns:36px 48px 1fr 24px;}
+    .service-row .desc{display:none;}
+    .service-row .mobile-thumb{display:block;width:48px;height:48px;border-radius:10px;object-fit:cover;}
+    .service-preview{display:none !important;}
+    .badge-cta{display:none;}
+  }
+
+  .detail-hero{padding-top:64px;padding-bottom:64px;}
+  .subnav{display:flex;gap:10px;flex-wrap:wrap;}
+  .subnav a{font-size:13px;font-weight:600;padding:9px 16px;border-radius:999px;border:1px solid var(--line);color:var(--ink-soft);}
+  .subnav a:hover{border-color:var(--terracotta);color:var(--terracotta);}
+  .modality{scroll-margin-top:96px;}
+</style>
+</head>
+<body>
+
+<svg aria-hidden="true" style="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:40;opacity:.045;mix-blend-mode:overlay;">
+  <filter id="grainFilter"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/></filter>
+  <rect width="100%" height="100%" filter="url(#grainFilter)"/>
+</svg>
+<div id="scroll-progress"></div>
+
+<div style="width:100%;min-height:100vh;background:var(--ivory);">
+
+  <div style="background:var(--teal-dark);color:#EFE9D8;">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;padding-top:10px;padding-bottom:10px;flex-wrap:wrap;gap:8px;">
+      <div style="font-size:13px;letter-spacing:.03em;">Serving families across Canada &amp; India — in person and online</div>
+      <div style="display:flex;gap:20px;font-size:13px;" class="hide-mobile">
+        <a href="tel:+16472977790" style="display:flex;align-items:center;gap:6px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +1 (647) 297-7790
+        </a>
+        <a href="mailto:vastureikienergy@gmail.com" style="display:flex;align-items:center;gap:6px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/></svg>
+          vastureikienergy@gmail.com
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <header style="border-bottom:1px solid var(--line);background:var(--ivory);position:sticky;top:0;z-index:20;">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;padding-top:18px;padding-bottom:18px;">
+      <a href="index.html" style="display:flex;align-items:center;gap:12px;">
+        <img src="images/logo.png" alt="Vastu Reiki Energy logo" width="42" height="42" style="display:block;">
+        <div style="line-height:1.1;">
+          <div style="font-family:'Fraunces',serif;font-size:19px;font-weight:600;">Vastu Reiki Energy</div>
+          <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);">Brampton, ON &middot; Worldwide Online</div>
+        </div>
+      </a>
+      <nav class="hide-mobile" style="display:flex;gap:32px;align-items:center;">
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="astrology.html">Astrology</a>
+        <a href="vastu.html" style="color:var(--terracotta);">Vastu Shastra</a>
+        <a href="reiki.html">Reiki</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <a href="index.html#book" class="btn btn-primary magnetic hide-mobile" style="padding:12px 24px;font-size:14px;">Book a Session</a>
+      <button aria-label="Toggle navigation menu" aria-expanded="false" id="menuToggle" class="mobile-menu-btn" style="background:none;border:1px solid var(--line);border-radius:10px;width:44px;height:44px;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+    <div class="mobile-nav-panel" id="mobileNavPanel" style="flex-direction:column;padding:8px 24px 24px;gap:4px;border-top:1px solid var(--line);">
+      <a href="index.html#about" style="padding:12px 0;font-size:16px;">About</a>
+      <a href="astrology.html" style="padding:12px 0;font-size:16px;">Astrology</a>
+      <a href="vastu.html" style="padding:12px 0;font-size:16px;">Vastu Shastra</a>
+      <a href="reiki.html" style="padding:12px 0;font-size:16px;">Reiki</a>
+      <a href="index.html#contact" style="padding:12px 0;font-size:16px;">Contact</a>
+      <a href="index.html#book" class="btn btn-primary" style="margin-top:10px;justify-content:center;">Book a Session</a>
+    </div>
+  </header>
+
+
+
+  <section class="detail-hero">
+    <div class="container grid-2" style="display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;">
+      <div class="reveal">
+        <div class="eyebrow">Vastu Shastra</div>
+        <h1 style="font-size:44px;line-height:1.1;margin-top:14px;">The ancient Indian science of architecture, applied to your actual home.</h1>
+        <p style="margin-top:20px;font-size:18px;max-width:520px;">Vastu Shastra is a guideline for designing and arranging a home so it enhances positive energy and flow. The goal is simple: attract positive cosmic energy so you can work better and live a fuller life. Vastu-compliant spaces are associated with healthier, happier living.</p>
+        <div style="display:flex;gap:16px;margin-top:30px;flex-wrap:wrap;">
+          <a href="index.html#contact" class="btn btn-primary magnetic">Book a Consultation</a>
+          <a href="#remedies" class="btn btn-outline magnetic">Non-Demolition Remedies</a>
+        </div>
+      </div>
+      <div class="reveal card duo" style="padding:0;overflow:hidden;aspect-ratio:4/3;">
+        <img src="images/hero.jpg" alt="A hand reaching into warm light, evoking Vastu energy work">
+      </div>
+    </div>
+  </section>
+
+
+
+  <section>
+    <div class="container grid-2" style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;">
+      <div class="reveal">
+        <div class="eyebrow">Why it matters</div>
+        <h2 style="font-size:32px;margin-top:12px;">Peace, harmony — and practical results</h2>
+        <p style="margin-top:16px;font-size:17px;">In the present day, Vastu Shastra is popular worldwide because of a universal need for peace and harmony. Applying it to home construction and design comes with promises of good health, wealth and happiness. Vastu isn't a necessity to live by — but it can genuinely help you lead a healthier, happier life. Think of it as the science of the environment you live in: the energy in a space affects how you experience your time inside it.</p>
+      </div>
+      <div class="reveal card duo" style="padding:0;overflow:hidden;aspect-ratio:1/1;">
+        <img src="images/vastu-directions.jpg" alt="A Vastu directional chart showing the eight compass directions and their associated chakra energies">
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--paper);">
+    <div class="container grid-4 stagger" style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
+      <div class="card" style="padding:24px;">
+        <h3 style="font-size:16px;">Health</h3>
+        <p style="margin-top:8px;font-size:14px;">A well-aligned home is linked to better physical wellbeing for the people living in it.</p>
+      </div>
+      <div class="card" style="padding:24px;">
+        <h3 style="font-size:16px;">Wealth</h3>
+        <p style="margin-top:8px;font-size:14px;">Correcting energy blocks in key zones is traditionally tied to financial flow.</p>
+      </div>
+      <div class="card" style="padding:24px;">
+        <h3 style="font-size:16px;">Harmony</h3>
+        <p style="margin-top:8px;font-size:14px;">Reduced friction at home and steadier relationships among family members.</p>
+      </div>
+      <div class="card" style="padding:24px;">
+        <h3 style="font-size:16px;">Happiness</h3>
+        <p style="margin-top:8px;font-size:14px;">A calmer, more supportive environment for everyday life.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="remedies" style="background:var(--teal-dark);color:#F3EEDC;">
+    <div class="container reveal" style="max-width:760px;margin:0 auto;text-align:center;">
+      <div class="eyebrow" style="color:#D9C98A;">Built for Canadian homes</div>
+      <h2 style="font-size:32px;margin-top:12px;color:#FBF7EF;">You don't need to renovate to apply Vastu</h2>
+      <p style="margin-top:16px;color:#CFC8AE;">Most condos, townhouses and detached homes across the GTA weren't built with Vastu in mind — and that's alright. In practice, Vastu is applied through simple, non-structural remedies: furniture placement, mirrors, colour, lighting, and small object placement in key zones of the home. No demolition, no renovation — just thoughtful adjustments to the space you already live in.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container reveal" style="text-align:center;max-width:720px;margin:0 auto;">
+      <div class="eyebrow">Consultations</div>
+      <h2 style="font-size:32px;margin-top:12px;">In-home visits across the GTA, or a video walkthrough from anywhere</h2>
+      <p style="margin-top:16px;font-size:17px;">For Brampton and the Greater Toronto Area, we can visit your home or office directly. For clients elsewhere in Canada or in India, a video walkthrough over Zoom, Skype or WhatsApp works just as well — share your floor plan and a walk through each room, and we'll talk through what to adjust.</p>
+    </div>
+  </section>
+
+
+  <section style="background:var(--terracotta);">
+    <div class="container reveal" style="text-align:center;">
+      <h2 style="font-size:36px;color:#FFF9F0;">Ready to bring your home into balance?</h2>
+      <p style="margin:16px auto 0;max-width:560px;color:#FBE7D6;">Get in touch today for a consultation and let's discuss your road to a more peaceful life — wherever you're calling from.</p>
+      <div style="display:flex;gap:16px;justify-content:center;margin-top:30px;flex-wrap:wrap;">
+        <a href="index.html#contact" class="btn magnetic" style="background:#FFF9F0;color:var(--terracotta);">Book Your Appointment</a>
+        <a href="https://wa.me/16472977790" class="btn magnetic" style="background:transparent;border:2px solid #FFF9F0;color:#FFF9F0;">Message on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+
+  <footer style="background:var(--charcoal);color:#CFC8AE;padding:48px 0 28px;">
+    <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:28px;">
+      <div style="max-width:320px;">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <img src="images/logo.png" alt="Vastu Reiki Energy logo" width="32" height="32" style="display:block;">
+          <div style="font-family:'Fraunces',serif;font-size:18px;color:#FBF7EF;">Vastu Reiki Energy</div>
+        </div>
+        <p style="margin-top:10px;color:#B7AF92;font-size:14px;">Ancient practices, modern care — connecting Canada and India, one session at a time.</p>
+      </div>
+      <div style="display:flex;gap:56px;flex-wrap:wrap;">
+        <div>
+          <div style="color:#FBF7EF;font-weight:600;font-size:14px;">Practice areas</div>
+          <div style="display:flex;flex-direction:column;gap:8px;margin-top:12px;font-size:14px;">
+            <a href="astrology.html">Astrology</a><a href="vastu.html">Vastu Shastra</a><a href="reiki.html">Reiki &amp; energy healing</a><a href="index.html#services">All services</a>
+          </div>
+        </div>
+        <div>
+          <div style="color:#FBF7EF;font-weight:600;font-size:14px;">Contact</div>
+          <div style="display:flex;flex-direction:column;gap:8px;margin-top:12px;font-size:14px;">
+            <span>+1 (647) 297-7790</span><span>vastureikienergy@gmail.com</span><span>Brampton, ON</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="margin-top:36px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);font-size:13px;color:#9A927A;">
+      &copy; 2026 Vastu Reiki Energy. All rights reserved.
+    </div>
+  </footer>
+
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var fineHover = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+  var menuBtn = document.getElementById('menuToggle');
+  var menuPanel = document.getElementById('mobileNavPanel');
+  if (menuBtn && menuPanel) {
+    menuBtn.addEventListener('click', function () {
+      var open = menuPanel.classList.toggle('is-open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+
+  var revealTargets = document.querySelectorAll('.reveal, .stagger');
+  if (reduceMotion || typeof IntersectionObserver === 'undefined') {
+    revealTargets.forEach(function (el) { el.classList.add('is-visible'); });
+  } else {
+    var revealIO = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealIO.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealTargets.forEach(function (el) { revealIO.observe(el); });
+  }
+
+  function animateCount(el) {
+    var target = parseInt(el.getAttribute('data-count-target'), 10) || 0;
+    var suffix = el.getAttribute('data-count-suffix') || '';
+    var duration = 1000;
+    var startTime = performance.now();
+    function step(now) {
+      var progress = Math.min((now - startTime) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.round(target * eased) + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  var counters = document.querySelectorAll('[data-count-target]');
+  if (reduceMotion || typeof IntersectionObserver === 'undefined') {
+    counters.forEach(function (el) {
+      el.textContent = el.getAttribute('data-count-target') + (el.getAttribute('data-count-suffix') || '');
+    });
+  } else {
+    var countIO = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          animateCount(entry.target);
+          countIO.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.4 });
+    counters.forEach(function (el) { countIO.observe(el); });
+  }
+
+  var progressBar = document.getElementById('scroll-progress');
+  if (progressBar) {
+    function updateProgress() {
+      var h = document.documentElement;
+      var scrolled = h.scrollTop || document.body.scrollTop;
+      var max = (h.scrollHeight || document.body.scrollHeight) - h.clientHeight;
+      var pct = max > 0 ? (scrolled / max) * 100 : 0;
+      progressBar.style.width = pct + '%';
+    }
+    document.addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+  }
+
+  var heroZone = document.getElementById('hero-glow-zone');
+  var glow = document.getElementById('cursor-glow');
+  if (heroZone && glow && fineHover && !reduceMotion) {
+    var targetX = heroZone.clientWidth / 2, targetY = 200, curX = targetX, curY = targetY;
+    heroZone.addEventListener('mousemove', function (e) {
+      var rect = heroZone.getBoundingClientRect();
+      targetX = e.clientX - rect.left;
+      targetY = e.clientY - rect.top;
+    });
+    function loop() {
+      curX += (targetX - curX) * 0.08;
+      curY += (targetY - curY) * 0.08;
+      glow.style.transform = 'translate(' + (curX - 160) + 'px,' + (curY - 160) + 'px)';
+      requestAnimationFrame(loop);
+    }
+    requestAnimationFrame(loop);
+  }
+
+  if (fineHover && !reduceMotion) {
+    document.querySelectorAll('.magnetic').forEach(function (btn) {
+      btn.addEventListener('mousemove', function (e) {
+        var rect = btn.getBoundingClientRect();
+        var x = e.clientX - rect.left - rect.width / 2;
+        var y = e.clientY - rect.top - rect.height / 2;
+        btn.style.transform = 'translate(' + (x * 0.22) + 'px,' + (y * 0.22) + 'px)';
+      });
+      btn.addEventListener('mouseleave', function () { btn.style.transform = 'translate(0,0)'; });
+    });
+  }
+
+  var rows = document.querySelectorAll('.service-row');
+  var preview = document.getElementById('service-preview');
+  var previewImg = document.getElementById('service-preview-img');
+  if (rows.length && preview && previewImg && fineHover) {
+    rows.forEach(function (row) {
+      row.addEventListener('mouseenter', function () {
+        previewImg.src = row.getAttribute('data-img');
+        preview.classList.add('is-active');
+      });
+      row.addEventListener('mousemove', function (e) {
+        preview.style.left = (e.clientX + 26) + 'px';
+        preview.style.top = (e.clientY - 140) + 'px';
+      });
+      row.addEventListener('mouseleave', function () {
+        preview.classList.remove('is-active');
+      });
+    });
+  }
+});
+</script>
+
+</body>
+</html>
