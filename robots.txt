@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://panchalbhavesh.github.io/vastu-reiki-energy-site/sitemap.xml
+Sitemap: https://www.vastureikienergy.com/sitemap.xml

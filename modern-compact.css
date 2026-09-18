@@ -1,0 +1,106 @@
+/* Compact version of the saved modern design. */
+:root{--page:#f1e3d0;--sand:#e8d7bd;--white:#f7ebda;--peach:#e8c8b5;--sage:#dce2ce;--line:#d3bea3;--muted:#61584e;--pattern:none}
+.theme-reiki{--pattern:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20600%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%239d573c%22%20stroke-width%3D%221.1%22%20opacity%3D%22.09%22%3E%3Ccircle%20cx%3D%22300%22%20cy%3D%22300%22%20r%3D%22115%22%2F%3E%3Ccircle%20cx%3D%22300%22%20cy%3D%22300%22%20r%3D%2288%22%2F%3E%3Cellipse%20cx%3D%22300%22%20cy%3D%22300%22%20rx%3D%2243%22%20ry%3D%22112%22%2F%3E%3Cellipse%20cx%3D%22300%22%20cy%3D%22300%22%20rx%3D%2243%22%20ry%3D%22112%22%20transform%3D%22rotate%2860%20300%20300%29%22%2F%3E%3Cellipse%20cx%3D%22300%22%20cy%3D%22300%22%20rx%3D%2243%22%20ry%3D%22112%22%20transform%3D%22rotate%28120%20300%20300%29%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");}
+.theme-astrology{--pattern:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20600%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%2393623b%22%20stroke-width%3D%221%22%20opacity%3D%22.1%22%3E%3Ccircle%20cx%3D%22300%22%20cy%3D%22300%22%20r%3D%22120%22%2F%3E%3Ccircle%20cx%3D%22300%22%20cy%3D%22300%22%20r%3D%22101%22%2F%3E%3Cpath%20d%3D%22M300%20180v20m60-4-10%2017m54%2027-17%2010m33%2050h-20m4%2060-17-10m-27%2054-10-17m-50%2033v-20m-60%204%2010-17m-54-27%2017-10m-33-50h20m-4-60%2017%2010m27-54%2010%2017M235%20317l39-59%2054%2029%2028%2054%22%2F%3E%3Ccircle%20cx%3D%22235%22%20cy%3D%22317%22%20r%3D%223%22%2F%3E%3Ccircle%20cx%3D%22274%22%20cy%3D%22258%22%20r%3D%223%22%2F%3E%3Ccircle%20cx%3D%22328%22%20cy%3D%22287%22%20r%3D%223%22%2F%3E%3Ccircle%20cx%3D%22356%22%20cy%3D%22341%22%20r%3D%223%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");}
+.theme-vastu{--pattern:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20600%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23677452%22%20stroke-width%3D%221%22%20opacity%3D%22.11%22%3E%3Crect%20x%3D%22195%22%20y%3D%22195%22%20width%3D%22210%22%20height%3D%22210%22%2F%3E%3Cpath%20d%3D%22M265%20195v210m70-210v210m-140-140h210m-210%2070h210M300%20167v-29m0%20295v29M167%20300h-29m295%200h29M286%20154l14-16%2014%2016%22%2F%3E%3Ccircle%20cx%3D%22300%22%20cy%3D%22300%22%20r%3D%2250%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");}
+.theme-home{--pattern:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20600%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%239d573c%22%20stroke-width%3D%221.1%22%20opacity%3D%22.09%22%3E%3Ccircle%20cx%3D%22300%22%20cy%3D%22300%22%20r%3D%22115%22%2F%3E%3Ccircle%20cx%3D%22300%22%20cy%3D%22300%22%20r%3D%2288%22%2F%3E%3Cellipse%20cx%3D%22300%22%20cy%3D%22300%22%20rx%3D%2243%22%20ry%3D%22112%22%2F%3E%3Cellipse%20cx%3D%22300%22%20cy%3D%22300%22%20rx%3D%2243%22%20ry%3D%22112%22%20transform%3D%22rotate%2860%20300%20300%29%22%2F%3E%3Cellipse%20cx%3D%22300%22%20cy%3D%22300%22%20rx%3D%2243%22%20ry%3D%22112%22%20transform%3D%22rotate%28120%20300%20300%29%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");}
+
+body{background-color:var(--page);background-image:var(--pattern),radial-gradient(ellipse at 90% 10%,#dfb59d66,transparent 58%);background-size:560px 560px,100% 850px;background-position:100% 110px,0 0;background-repeat:repeat,repeat-y}
+.site-header{background:#efdfcaf5}
+.section{padding-block:46px}
+.home-hero{padding-top:28px}
+.visual-hero-grid{gap:28px;padding-bottom:22px}
+.visual-home h1{font-size:clamp(40px,4.3vw,56px)}
+.visual-home h1>span{margin-top:14px}
+.hero-status{margin-bottom:18px}
+.hero-intro{margin-top:16px}
+.hero-actions{margin-top:20px;gap:20px}
+.hero-art{background:#e7d0b9}
+.hero-art figcaption{padding:13px 20px}
+.availability{padding-block:16px}
+.section-heading{margin-bottom:25px;gap:30px}
+.eyebrow{margin-bottom:14px}
+.visual-services{padding-top:34px}
+.photo-services,.practitioner-grid,.spiritual-gallery{gap:18px}
+.photo-service{background-color:#f6e7d3}
+.photo-service-copy{padding:20px}
+.photo-service-copy h3{margin-top:9px}
+.photo-service-copy p{margin-top:8px;min-height:0}
+.photo-service-copy .text-link{margin-top:14px}
+.service-image{height:205px;background:#e7d7c0;padding:10px}
+.photo-services .reiki{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20600%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%239d573c%22%20stroke-width%3D%221.1%22%20opacity%3D%22.09%22%3E%3Ccircle%20cx%3D%22300%22%20cy%3D%22300%22%20r%3D%22115%22%2F%3E%3Ccircle%20cx%3D%22300%22%20cy%3D%22300%22%20r%3D%2288%22%2F%3E%3Cellipse%20cx%3D%22300%22%20cy%3D%22300%22%20rx%3D%2243%22%20ry%3D%22112%22%2F%3E%3Cellipse%20cx%3D%22300%22%20cy%3D%22300%22%20rx%3D%2243%22%20ry%3D%22112%22%20transform%3D%22rotate%2860%20300%20300%29%22%2F%3E%3Cellipse%20cx%3D%22300%22%20cy%3D%22300%22%20rx%3D%2243%22%20ry%3D%22112%22%20transform%3D%22rotate%28120%20300%20300%29%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")}
+.photo-services .astrology{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20600%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%2393623b%22%20stroke-width%3D%221%22%20opacity%3D%22.1%22%3E%3Ccircle%20cx%3D%22300%22%20cy%3D%22300%22%20r%3D%22120%22%2F%3E%3Ccircle%20cx%3D%22300%22%20cy%3D%22300%22%20r%3D%22101%22%2F%3E%3Cpath%20d%3D%22M300%20180v20m60-4-10%2017m54%2027-17%2010m33%2050h-20m4%2060-17-10m-27%2054-10-17m-50%2033v-20m-60%204%2010-17m-54-27%2017-10m-33-50h20m-4-60%2017%2010m27-54%2010%2017M235%20317l39-59%2054%2029%2028%2054%22%2F%3E%3Ccircle%20cx%3D%22235%22%20cy%3D%22317%22%20r%3D%223%22%2F%3E%3Ccircle%20cx%3D%22274%22%20cy%3D%22258%22%20r%3D%223%22%2F%3E%3Ccircle%20cx%3D%22328%22%20cy%3D%22287%22%20r%3D%223%22%2F%3E%3Ccircle%20cx%3D%22356%22%20cy%3D%22341%22%20r%3D%223%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")}
+.photo-services .vastu{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20600%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23677452%22%20stroke-width%3D%221%22%20opacity%3D%22.11%22%3E%3Crect%20x%3D%22195%22%20y%3D%22195%22%20width%3D%22210%22%20height%3D%22210%22%2F%3E%3Cpath%20d%3D%22M265%20195v210m70-210v210m-140-140h210m-210%2070h210M300%20167v-29m0%20295v29M167%20300h-29m295%200h29M286%20154l14-16%2014%2016%22%2F%3E%3Ccircle%20cx%3D%22300%22%20cy%3D%22300%22%20r%3D%2250%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")}
+.photo-service{background-size:380px 380px;background-position:center bottom;background-repeat:no-repeat}
+.practice-section,.tinted{background-color:#e6d4bce8;background-image:var(--pattern);background-size:560px 560px;background-position:90% 50%}
+.practitioner{background:#f3e4d0ef;padding:25px}
+.practitioner-top{margin-bottom:23px}
+.practitioner .role{margin-bottom:15px}
+.practitioner .text-link{margin-top:18px}
+.process{gap:28px}
+.process article{padding-top:17px}
+.process h3{margin-top:22px}
+.process p{margin-top:12px}
+.faq-section{gap:42px;padding-top:26px}
+.faq-list summary{padding-block:17px}
+.contact-section{padding-top:8px;padding-bottom:32px}
+.contact-box{padding:35px;gap:30px}
+.contact-box p{margin-top:17px}
+.contact-actions{gap:18px}
+footer{padding-top:18px}
+.footer-grid{padding-bottom:30px;gap:30px}
+.footer-bottom{padding-block:20px 26px}
+.detail-hero{padding-top:22px}
+.detail-hero-grid{gap:35px;padding-block:30px}
+.detail-hero h1{font-size:clamp(38px,4.4vw,59px)}
+.lead{margin-top:18px}
+.detail-hero .button{margin-top:21px}
+.detail-original-art.portrait-art{max-width:235px}
+.intro-grid,.booking-grid{gap:42px}
+.booking-card{padding:25px;background:#f5e6d3c9}
+.booking-card>div{padding-bottom:16px;margin-bottom:16px}
+.spiritual-gallery-section{padding-top:12px}
+.spiritual-tile{background:#f5e5d1}
+.spiritual-tile>div{height:235px;padding:12px;background:#e5d4bc}
+.spiritual-tile h3{padding:17px 20px}
+.modality-list summary{padding-block:20px}
+@media(max-width:900px){
+ .section{padding-block:35px}
+ .home-hero{padding-top:25px}
+ .visual-hero-grid,.detail-hero-grid{gap:24px}
+ .section-heading{gap:24px;margin-bottom:23px}
+ .service-image{height:190px}
+ .photo-service-copy{padding:18px}
+ .detail-original-art.portrait-art{max-width:215px}
+ .spiritual-tile>div{height:215px}
+ .intro-grid,.booking-grid,.faq-section{gap:28px}
+}
+@media(max-width:600px){
+ body{background-size:420px 420px,100% 700px}
+ nav{background:#efdfca}
+ .section{padding-block:28px}
+ .home-hero{padding-top:24px}
+ .visual-hero-grid{gap:22px;padding-bottom:16px}
+ .visual-home h1{font-size:42px}
+ .hero-art figcaption{padding:12px 18px}
+ .availability{padding-block:14px}
+ .visual-services{padding-top:26px}
+ .service-image{height:205px;padding:10px}
+ .photo-services,.practitioner-grid,.spiritual-gallery{gap:16px}
+ .photo-service-copy{padding:20px}
+ .practitioner{padding:22px}
+ .practitioner-top{margin-bottom:20px}
+ .section-heading{margin-bottom:22px}
+ .section-heading>p{margin-top:15px}
+ .process{gap:23px}
+ .process h3{margin-top:15px}
+ .faq-section{gap:18px}
+ .contact-box{padding:26px 22px}
+ .contact-actions{margin-top:24px;gap:17px}
+ .contact-section{padding-bottom:25px}
+ .footer-grid{gap:27px;padding-bottom:25px}
+ .detail-hero-grid{padding-block:24px;gap:24px}
+ .detail-original-art.portrait-art{max-width:200px}
+ .spiritual-tile>div{height:225px}
+ .booking-card{padding:22px}
+}
