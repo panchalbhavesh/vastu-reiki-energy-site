@@ -121,3 +121,7 @@ footer{padding-top:18px}
 .theme-reiki .hero-art,.theme-astrology .hero-art,.theme-vastu .hero-art{background:var(--art)}
 .theme-reiki .eyebrow,.theme-astrology .eyebrow,.theme-vastu .eyebrow,.theme-reiki .small-label,.theme-astrology .small-label,.theme-vastu .small-label{color:var(--accent)}
 .theme-reiki .contact-box .eyebrow,.theme-astrology .contact-box .eyebrow,.theme-vastu .contact-box .eyebrow{color:#ffebdc}
+
+/* Keyboard focus ring on menu links: slim and rounded, so it does not look like a box around the item. */
+nav a:focus-visible,.mobile-nav a:focus-visible{outline:2px solid var(--terra);outline-offset:3px;border-radius:8px}
+nav a:focus:not(:focus-visible),.mobile-nav a:focus:not(:focus-visible){outline:none}
