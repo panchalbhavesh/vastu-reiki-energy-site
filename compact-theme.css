@@ -58,13 +58,13 @@ footer{padding:34px 0 24px}
  .btn{white-space:normal;text-align:center;justify-content:center}
 }
 
-/* Per-page themes: shared layout, different accent, tint and pattern. */
-.theme-reiki{--terra:#6b4a9e;--terra-deep:#523878;--cream:#f1ebf5;--cream-2:#e4d9ec;--cream-3:#dccdeb;--line:#cfc2dc;--clay:#cdb8e3;--gold:#d9c6f0;--gold-l:#eadcf8;--espresso:#2f2147;--ink-soft:#5d5568;--tint:#c9b3e38c;--chrome:#ece3f3f5;--card:#f8f3fbed;--field:#faf6fc}
-.theme-astrology{--terra:#34407d;--terra-deep:#263068;--cream:#eceef5;--cream-2:#dde1ee;--cream-3:#d6daee;--line:#c4cade;--clay:#b9c2e6;--gold:#e0c377;--gold-l:#efdca4;--espresso:#1d2550;--ink-soft:#555a6b;--tint:#b3bde88c;--chrome:#e3e6f1f5;--card:#f6f7fbed;--field:#f8f9fc}
-.theme-vastu{--terra:#566a35;--terra-deep:#425428;--cream:#eef0e2;--cream-2:#e0e5cf;--cream-3:#d3dcbd;--line:#c8cfb2;--clay:#c3d1a2;--gold:#d9c98a;--gold-l:#e8dcae;--espresso:#2f3b1e;--ink-soft:#595d4c;--tint:#bccb9a8c;--chrome:#e6e9d6f5;--card:#f7f8eeed;--field:#f9faf2}
+/* Per-page themes: backgrounds and section labels only; buttons, header and dark bands keep the brand colours. */
+.theme-reiki{--accent:#6b4a9e;--cream:#f1ebf5;--cream-2:#e4d9ec;--cream-3:#dccdeb;--line:#cfc2dc;--tint:#c9b3e38c;--card:#f8f3fbed;--field:#faf6fc}
+.theme-astrology{--accent:#34407d;--cream:#eceef5;--cream-2:#dde1ee;--cream-3:#d6daee;--line:#c4cade;--tint:#b3bde88c;--card:#f6f7fbed;--field:#f8f9fc}
+.theme-vastu{--accent:#566a35;--cream:#eef0e2;--cream-2:#e0e5cf;--cream-3:#d3dcbd;--line:#c8cfb2;--tint:#bccb9a8c;--card:#f7f8eeed;--field:#f9faf2}
 .theme-reiki,.theme-astrology,.theme-vastu{background-image:var(--pattern),radial-gradient(ellipse at 90% 12%,var(--tint),transparent 55%),linear-gradient(135deg,var(--cream),var(--cream-2))}
-.theme-reiki header.site,.theme-reiki .mobile-nav,.theme-astrology header.site,.theme-astrology .mobile-nav,.theme-vastu header.site,.theme-vastu .mobile-nav{background:var(--chrome)}
 .theme-reiki .tint,.theme-astrology .tint,.theme-vastu .tint{background-color:var(--cream-2)}
-.theme-reiki .dark,.theme-astrology .dark,.theme-vastu .dark{background-color:var(--espresso)}
+.theme-reiki .eyebrow,.theme-astrology .eyebrow,.theme-vastu .eyebrow{color:var(--accent)}
+.theme-reiki .dark .eyebrow,.theme-astrology .dark .eyebrow,.theme-vastu .dark .eyebrow{color:var(--gold)}
 .theme-reiki .card,.theme-reiki .contact-list a,.theme-reiki .contact-list div,.theme-astrology .card,.theme-astrology .contact-list a,.theme-astrology .contact-list div,.theme-vastu .card,.theme-vastu .contact-list a,.theme-vastu .contact-list div{background:var(--card)}
 .theme-reiki .pill,.theme-reiki .chip,.theme-reiki .field input,.theme-reiki .field select,.theme-reiki .field textarea,.theme-astrology .pill,.theme-astrology .chip,.theme-astrology .field input,.theme-astrology .field select,.theme-astrology .field textarea,.theme-vastu .pill,.theme-vastu .chip,.theme-vastu .field input,.theme-vastu .field select,.theme-vastu .field textarea{background:var(--field)}
