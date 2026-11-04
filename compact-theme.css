@@ -68,3 +68,7 @@ footer{padding:34px 0 24px}
 .theme-reiki .dark .eyebrow,.theme-astrology .dark .eyebrow,.theme-vastu .dark .eyebrow{color:var(--gold)}
 .theme-reiki .card,.theme-reiki .contact-list a,.theme-reiki .contact-list div,.theme-astrology .card,.theme-astrology .contact-list a,.theme-astrology .contact-list div,.theme-vastu .card,.theme-vastu .contact-list a,.theme-vastu .contact-list div{background:var(--card)}
 .theme-reiki .pill,.theme-reiki .chip,.theme-reiki .field input,.theme-reiki .field select,.theme-reiki .field textarea,.theme-astrology .pill,.theme-astrology .chip,.theme-astrology .field input,.theme-astrology .field select,.theme-astrology .field textarea,.theme-vastu .pill,.theme-vastu .chip,.theme-vastu .field input,.theme-vastu .field select,.theme-vastu .field textarea{background:var(--field)}
+
+/* Keyboard focus ring on menu links: slim and rounded, so it does not look like a box around the item. */
+nav a:focus-visible,.mobile-nav a:focus-visible{outline:2px solid var(--terra);outline-offset:3px;border-radius:8px}
+nav a:focus:not(:focus-visible),.mobile-nav a:focus:not(:focus-visible){outline:none}
