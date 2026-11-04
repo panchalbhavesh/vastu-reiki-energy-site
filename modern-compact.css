@@ -113,15 +113,11 @@ footer{padding-top:18px}
 .social-card .fb-card{height:150px}.social-card>p{text-align:center;max-width:420px;font-size:15px}.social-card:first-child{justify-content:center}
 .social-card .fb-logo{width:96px;height:96px;object-fit:contain}.social-card:first-child{text-align:center}
 
-/* Per-page themes: shared layout, different accent, tint and pattern. */
-.theme-reiki{--terra:#6b4a9e;--green:#4a3470;--page:#f1ebf5;--sand:#e4d9ec;--white:#f8f3fb;--peach:#dccdeb;--sage:#d9dcec;--line:#cfc2dc;--muted:#5d5568;--tint:#c9b3e366;--chrome:#ece3f3;--art:#dccdeb;--hover:#523878}
-.theme-astrology{--terra:#34407d;--green:#232c5e;--page:#eceef5;--sand:#dde1ee;--white:#f6f7fb;--peach:#d6daee;--sage:#d5e0ea;--line:#c4cade;--muted:#555a6b;--tint:#b3bde866;--chrome:#e3e6f1;--art:#d6daee;--hover:#263068}
-.theme-vastu{--terra:#566a35;--green:#3b4a26;--page:#eef0e2;--sand:#e0e5cf;--white:#f7f8ee;--peach:#e5d6bf;--sage:#d3dcbd;--line:#c8cfb2;--muted:#595d4c;--tint:#bccb9a66;--chrome:#e6e9d6;--art:#dde4c8;--hover:#425428}
+/* Per-page themes: backgrounds and section labels only; buttons, header and contact box keep the brand colours. */
+.theme-reiki{--accent:#6b4a9e;--page:#f1ebf5;--sand:#e4d9ec;--white:#f8f3fb;--peach:#dccdeb;--sage:#d9dcec;--line:#cfc2dc;--muted:#5d5568;--tint:#c9b3e366;--art:#dccdeb}
+.theme-astrology{--accent:#34407d;--page:#eceef5;--sand:#dde1ee;--white:#f6f7fb;--peach:#d6daee;--sage:#d5e0ea;--line:#c4cade;--muted:#555a6b;--tint:#b3bde866;--art:#d6daee}
+.theme-vastu{--accent:#566a35;--page:#eef0e2;--sand:#e0e5cf;--white:#f7f8ee;--peach:#e5d6bf;--sage:#d3dcbd;--line:#c8cfb2;--muted:#595d4c;--tint:#bccb9a66;--art:#dde4c8}
 .theme-reiki,.theme-astrology,.theme-vastu{background-image:var(--pattern),radial-gradient(ellipse at 90% 10%,var(--tint),transparent 58%)}
-.theme-reiki .site-header,.theme-astrology .site-header,.theme-vastu .site-header{background:var(--chrome)}
 .theme-reiki .hero-art,.theme-astrology .hero-art,.theme-vastu .hero-art{background:var(--art)}
-.theme-reiki .button.dark:hover,.theme-astrology .button.dark:hover,.theme-vastu .button.dark:hover{background:var(--hover)}
-.theme-astrology .eyebrow,.theme-astrology .small-label{color:#7d5f17}
-.theme-vastu .eyebrow,.theme-vastu .small-label{color:#a5462d}
-@media(max-width:900px){.theme-reiki nav,.theme-astrology nav,.theme-vastu nav{background:var(--chrome)}}
-.theme-astrology .contact-box .eyebrow,.theme-vastu .contact-box .eyebrow{color:#ffebdc}
+.theme-reiki .eyebrow,.theme-astrology .eyebrow,.theme-vastu .eyebrow,.theme-reiki .small-label,.theme-astrology .small-label,.theme-vastu .small-label{color:var(--accent)}
+.theme-reiki .contact-box .eyebrow,.theme-astrology .contact-box .eyebrow,.theme-vastu .contact-box .eyebrow{color:#ffebdc}
