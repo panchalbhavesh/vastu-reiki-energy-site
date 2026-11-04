@@ -72,3 +72,5 @@ footer{padding:34px 0 24px}
 /* Keyboard focus ring on menu links: slim and rounded, so it does not look like a box around the item. */
 nav a:focus-visible,.mobile-nav a:focus-visible{outline:2px solid var(--terra);outline-offset:3px;border-radius:8px}
 nav a:focus:not(:focus-visible),.mobile-nav a:focus:not(:focus-visible){outline:none}
+
+html{scroll-padding-top:110px}
